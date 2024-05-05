@@ -1,0 +1,192 @@
+.containerAll {
+    max-width: 900px;
+    margin: 0 auto;
+
+
+    .containers {
+        transform: translateY(40px);
+
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 40px;
+
+        .grid-item-1 {
+            position: relative;
+
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+
+            }
+
+            .image {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                position: relative;
+
+                .itemPrice {
+                    top: 10px;
+                    right: 10px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    padding: 4px;
+                    border: 1px solid gainsboro;
+                    background-color: rgb(48, 156, 233);
+                    border-radius: 20px;
+                    color: white
+                }
+
+                .img {
+                    border-radius: 0 0 10px 10px;
+                    flex: 1;
+                }
+
+            }
+
+
+
+            .content {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                gap: 10px;
+
+                .icon {
+                    width: 25px;
+                    height: 25px;
+                }
+
+
+
+            }
+
+        }
+
+        .grid-item-2 {
+            top: 60px;
+            position: sticky;
+
+
+            .user-profile {
+                border: 1px solid gray;
+                border-radius: 10px;
+                padding: 10px;
+                height: max-content;
+
+                .user-profile-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .text-user {
+                        display: flex;
+                        align-items: center;
+
+                        transform: translateY(25%);
+                    }
+                }
+
+            }
+
+            .customerJoin {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+
+                .content-user-join {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 2px;
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+    .sesionComment {
+        border-top: 1px solid gray;
+        width: 80%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        .addCommentContainer {
+            padding: 10px 10px 10px 0;
+            display: flex;
+            flex-shrink: 0;
+            flex: 1;
+            width: 100%;
+            gap: 10px;
+
+            .bodyinput {
+                width: 60%;
+                border-radius: 10px;
+                height: 50px;
+            }
+
+        }
+
+        .comment_Post {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            padding-bottom: 80px;
+
+            .comment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 2px solid rgba(85, 92, 111, 0.414);
+                padding: 5px;
+                border-radius: 10px;
+
+                .textContent {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .userID {
+                        color: rgb(41, 152, 243);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width :500px) {
+    .containerAll {
+        padding: 0 20px;
+
+        .containers {
+            grid-template-columns: 3fr;
+        }
+
+        .grid-item-1 {
+            grid-column: 1/ span 3;
+        }
+
+        .grid-item-2 {
+            display: none;
+        }
+
+        .sesionComment {
+            width: 100%;
+        }
+    }
+
+}

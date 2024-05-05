@@ -1,0 +1,41 @@
+.container-sa {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  .navSort {
+    top: 60px;
+    width: 100%;
+    z-index: 50;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+    .searchcontainer {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+
+    }
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:776px) {
+
+
+  .searchcontainer {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    background-color: rgb(234, 240, 238)
+  }
+}

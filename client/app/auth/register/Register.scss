@@ -1,0 +1,44 @@
+.sessionRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("/bgg.jpg") no-repeat;
+
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  z-index: 5;
+
+  .form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-30px);
+  }
+
+  .form-value {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 400px;
+    background-color: azure;
+
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .titleName {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

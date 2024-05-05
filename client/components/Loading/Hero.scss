@@ -1,0 +1,14 @@
+.content {
+    display: flex;
+    justify-content: center;
+
+    .text-content {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        background-color: rgba(10, 100, 100, 0.3);
+        padding: 2;
+
+    }
+}

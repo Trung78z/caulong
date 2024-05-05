@@ -1,0 +1,84 @@
+.session_create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("/bgg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY();
+
+    .form-value {
+      padding: 40px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      background-color: rgba(240, 255, 255, 0.75);
+
+      h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .formit {
+        width: 100%;
+
+        max-width: 1166px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+
+        .inforpublic {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .text-area {
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 10px;
+          }
+        }
+
+
+      }
+
+      .buttonCreate {
+        display: flex;
+        justify-content: center
+      }
+
+    }
+  }
+
+
+
+  @media screen and (max-width :766px) {
+    .form-box {
+      width: 90%;
+
+      .form-value {
+        width: 100%;
+
+        .formit {
+          grid-template-columns: 1fr;
+          min-width: 0;
+
+          .inforpublic {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
